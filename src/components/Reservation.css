@@ -42,3 +42,33 @@
   font-size: 18px;
   font-weight: bold;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .reservation {
+    padding: 0 15px;
+  }
+
+  .reservation h2 {
+    font-size: 1.8rem;
+  }
+
+  .reservation-form {
+    gap: 15px;
+  }
+
+  .form-group input {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservation h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

@@ -32,3 +32,33 @@
   color: var(--primary);
   margin-bottom: 15px;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about {
+    padding: 30px 15px;
+    margin: 10px;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .owner-info {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .owner-info {
+    padding: 15px;
+  }
+}

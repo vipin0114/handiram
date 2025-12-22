@@ -153,3 +153,100 @@
   padding: 15px 30px;
   font-size: 18px;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-buttons .btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-dishes {
+    padding: 40px 10px;
+    margin-left: 0;
+  }
+
+  .featured-dishes h2 {
+    font-size: 2rem;
+  }
+
+  .featured-dishes > p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .dishes-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0 10px 30px;
+  }
+
+  .dish-card {
+    min-height: auto;
+  }
+
+  .dish-info {
+    padding: 15px;
+  }
+
+  .dish-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .dish-info p {
+    font-size: 0.9rem;
+  }
+
+  .price {
+    font-size: 1.1rem;
+  }
+
+  .view-more .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .featured-dishes h2 {
+    font-size: 1.8rem;
+  }
+
+  .dishes-grid {
+    gap: 15px;
+  }
+}
