@@ -1,0 +1,39 @@
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.info h3 {
+  color: var(--maroon);
+  margin-top: 20px;
+}
+
+.map {
+  flex: 1;
+  min-width: 300px;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border-radius: 10px;
+}

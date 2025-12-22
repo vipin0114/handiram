@@ -1,0 +1,32 @@
+.footer {
+  background-color: var(--dark);
+  color: white;
+  padding: 40px 20px;
+  margin-top: auto;
+  border-top: 3px solid var(--accent);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h3, .footer-section h4 {
+  color: var(--accent);
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
