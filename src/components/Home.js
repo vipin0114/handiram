@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
-
 const featuredDishes = [
   {
     name: 'Malai Kofta',
@@ -40,7 +39,7 @@ function Home() {
     <main>
       <section className="hero">
         <div className="hero-content">
-          <h1>Welcome to Handiram</h1>
+          <h1><img src="/logo.png" alt="Handiram Logo" className="hero-logo" /> Welcome to Handiram</h1>
           <p>Authentic North Indian Cuisine</p>
           <div className="hero-buttons">
             <Link to="/reservation" className="btn">Reserve a Table</Link>

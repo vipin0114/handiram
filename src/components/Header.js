@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
-
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navRef = useRef(null);
@@ -29,7 +28,8 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <h1>Handiram</h1>
+        <img src="/logo.png" alt="Handiram" />
+       
       </div>
       <nav ref={navRef} className={isMenuOpen ? 'nav-open' : ''}>
         <button className="hamburger" onClick={toggleMenu}></button>
