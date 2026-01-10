@@ -27,11 +27,7 @@ const menuItems = [
     description: 'Delicious noodles stir-fried with paneer and vegetables.',
     image: 'https://images.unsplash.com/photo-1552611052-33e04de081de?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
   },
-  {
-    name: 'Butter Chicken',
-    description: 'Tender chicken in a rich, creamy tomato sauce.',
-    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
-  },
+,
   {
     name: 'Chana Masala',
     description: 'Spiced chickpeas in a tangy tomato gravy.',
