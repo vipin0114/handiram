@@ -42,14 +42,6 @@
   padding: 0 15px 10px;
 }
 
-.price {
-  display: block;
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: var(--secondary);
-  padding: 0 15px 15px;
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
   .menu-grid {
@@ -63,10 +55,6 @@
 
   .menu-item p {
     font-size: 0.9rem;
-  }
-
-  .price {
-    font-size: 1.1rem;
   }
 }
 

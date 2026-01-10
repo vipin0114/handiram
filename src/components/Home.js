@@ -6,38 +6,32 @@ const featuredDishes = [
   {
     name: 'Malai Kofta',
     description: 'Soft paneer dumplings in a creamy tomato-based curry.',
-    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-    price: '₹280'
+    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
   },
   {
     name: 'Paneer Noodles',
     description: 'Delicious noodles stir-fried with paneer and vegetables.',
-    image: 'https://images.unsplash.com/photo-1552611052-33e04de081de?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-    price: '₹220'
+    image: 'https://images.unsplash.com/photo-1552611052-33e04de081de?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
   },
   {
     name: 'Shahi Paneer',
     description: 'Rich and creamy paneer dish with royal flavors.',
-    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-    price: '₹260'
+    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
   },
   {
     name: 'Dal Makhani',
     description: 'Slow-cooked black lentils in a buttery sauce.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-    price: '₹180'
+    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
   },
   {
     name: 'Butter Chicken',
     description: 'Tender chicken in a rich, creamy tomato sauce.',
-    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-    price: '₹320'
+    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
   },
   {
     name: 'Matar Paneer',
     description: 'Cottage cheese and peas cooked in a spicy gravy.',
-    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80',
-    price: '₹240'
+    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
   }
 ];
 
@@ -65,7 +59,6 @@ function Home() {
               <div className="dish-info">
                 <h3>{dish.name}</h3>
                 <p>{dish.description}</p>
-                <span className="price">{dish.price}</span>
               </div>
             </div>
           ))}

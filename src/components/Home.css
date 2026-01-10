@@ -133,13 +133,6 @@
   flex-grow: 1;
 }
 
-.price {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: var(--secondary);
-  margin-top: auto;
-}
-
 .view-more {
   margin-top: 40px;
 }
@@ -216,10 +209,6 @@
 
   .dish-info p {
     font-size: 0.9rem;
-  }
-
-  .price {
-    font-size: 1.1rem;
   }
 
   .view-more .btn {
