@@ -27,6 +27,62 @@
   margin-top: 20px;
 }
 
+.directions-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.directions-btn:hover {
+  background-color: var(--secondary);
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.contact-buttons button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-buttons button:hover {
+  background-color: var(--secondary);
+}
+
+.maps-btn {
+  background-color: #4285f4 !important;
+}
+
+.maps-btn:hover {
+  background-color: #3367d6 !important;
+}
+
+.call-btn {
+  background-color: #34a853 !important;
+}
+
+.call-btn:hover {
+  background-color: #2d8f47 !important;
+}
+
 .map {
   flex: 1;
   min-width: 300px;
@@ -50,6 +106,16 @@
     min-width: auto;
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-buttons button {
+    width: 100%;
+    max-width: 280px;
   }
 
   .map iframe {

@@ -2,6 +2,21 @@ import React from 'react';
 import './Contact.css';
 
 function Contact() {
+  const handleGetDirections = () => {
+    const destination = "Handiram Restaurant, Dhampur–Nagina Road (NH-734), District Bijnor, Uttar Pradesh, India";
+    const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination)}`;
+    window.open(googleMapsUrl, '_blank');
+  };
+
+  const handleViewOnMaps = () => {
+    const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Handiram Restaurant, Dhampur–Nagina Road (NH-734), District Bijnor, Uttar Pradesh, India")}`;
+    window.open(googleMapsUrl, '_blank');
+  };
+
+  const handleCall = (phoneNumber) => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
   return (
     <section className="contact">
       <h2>Contact & Location</h2>
@@ -15,9 +30,20 @@ function Contact() {
           <p>Dhampur–Nagina Road (NH-734)</p>
           <p>District Bijnor, Uttar Pradesh, India</p>
           <h3>Contact Number</h3>
-          <p>📞 Phone
-📱 +91 9871872037,8285604443
-<p>(Available during restaurant working hours)</p></p>
+          <p>📞 Phone: +91 9871872037, +91 8285604443</p>
+          <p>(Available during restaurant working hours)</p>
+          
+          <div className="contact-buttons">
+            <button onClick={handleGetDirections} className="directions-btn">
+              🗺️ Get Directions
+            </button>
+            <button onClick={handleViewOnMaps} className="maps-btn">
+              📍 View on Google Maps
+            </button>
+            <button onClick={() => handleCall('+919871872037')} className="call-btn">
+              📞 Call Now
+            </button>
+          </div>
         </div>
         <div className="map">
           <iframe

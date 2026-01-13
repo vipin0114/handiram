@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.eb8d6da9.css",
-    "main.js": "/static/js/main.7d9bbfdb.js",
+    "main.css": "/static/css/main.9675789b.css",
+    "main.js": "/static/js/main.367af03f.js",
     "static/media/Butter Paneer.png": "/static/media/Butter Paneer.c4773cd47a28ebaa3f95.png",
     "static/media/Allo Gobhi.png": "/static/media/Allo Gobhi.0de3dfca7b607221b619.png",
     "static/media/Chana Masala.png": "/static/media/Chana Masala.e2c6416600b673e020de.png",
@@ -11,11 +11,11 @@
     "static/media/Daal Makhani.jpg": "/static/media/Daal Makhani.bcdc37cb719716b4e3ab.jpg",
     "static/media/Sahi PAneer.jpg": "/static/media/Sahi PAneer.2f91aa3a90885940ef0c.jpg",
     "index.html": "/index.html",
-    "main.eb8d6da9.css.map": "/static/css/main.eb8d6da9.css.map",
-    "main.7d9bbfdb.js.map": "/static/js/main.7d9bbfdb.js.map"
+    "main.9675789b.css.map": "/static/css/main.9675789b.css.map",
+    "main.367af03f.js.map": "/static/js/main.367af03f.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb8d6da9.css",
-    "static/js/main.7d9bbfdb.js"
+    "static/css/main.9675789b.css",
+    "static/js/main.367af03f.js"
   ]
 }
