@@ -1,41 +1,48 @@
 import React from 'react';
 import './Menu.css';
+import malaiKoftaImage from '../Assets/Malai Kofta.jpg';
+import sahiPaneerImage from '../Assets/Sahi PAneer.jpg';
+import dalMakhaniImage from '../Assets/Daal Makhani.jpg';
+import paneerNoodlesImage from '../Assets/Paneer noodles.jpg';
+import chanaMasalaImage from '../Assets/Chana Masala.png';
+import alooGobiImage from '../Assets/Allo Gobhi.png';
+import butterPaneerImage from '../Assets/Butter Paneer.png';
 
 const menuItems = [
   {
     name: 'Malai Kofta',
     description: 'Soft paneer dumplings in a creamy tomato-based curry.',
-    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+    image: malaiKoftaImage
   },
   {
-    name: 'Matar Paneer',
+    name: 'Sahi Paneer',
     description: 'Cottage cheese and peas cooked in a spicy gravy.',
-    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+    image: sahiPaneerImage
   },
   {
     name: 'Butter Paneer',
     description: 'Rich and creamy paneer dish cooked in butter and spices.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+    image: butterPaneerImage
   },
   {
     name: 'Dal Makhani',
     description: 'Slow-cooked black lentils in a buttery sauce.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+    image: dalMakhaniImage
   },
   {
     name: 'Paneer Noodles',
     description: 'Delicious noodles stir-fried with paneer and vegetables.',
-    image: 'https://images.unsplash.com/photo-1552611052-33e04de081de?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+    image: paneerNoodlesImage
   },
   {
     name: 'Chana Masala',
     description: 'Spiced chickpeas in a tangy tomato gravy.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+    image: chanaMasalaImage
   },
   {
     name: 'Aloo Gobi',
     description: 'Cauliflower and potatoes cooked with aromatic spices.',
-    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+    image: alooGobiImage
   }
 ];
 

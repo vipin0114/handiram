@@ -1,36 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import malaiKoftaImage from '../Assets/Malai Kofta.jpg';
+import paneerNoodlesImage from '../Assets/Paneer noodles.jpg';
+import sahiPaneerImage from '../Assets/Sahi PAneer.jpg';
+import dalMakhaniImage from '../Assets/Daal Makhani.jpg';
+import vegManchurianImage from '../Assets/Veg Manchurian.jpg';
+import alooGobiImage from '../Assets/Allo Gobhi.png';
 const featuredDishes = [
   {
     name: 'Malai Kofta',
     description: 'Soft paneer dumplings in a creamy tomato-based curry.',
-    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+    image: malaiKoftaImage
   },
   {
     name: 'Paneer Noodles',
     description: 'Delicious noodles stir-fried with paneer and vegetables.',
-    image: 'https://images.unsplash.com/photo-1552611052-33e04de081de?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+    image: paneerNoodlesImage
   },
   {
     name: 'Shahi Paneer',
     description: 'Rich and creamy paneer dish with royal flavors.',
-    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+    image: sahiPaneerImage
   },
   {
     name: 'Dal Makhani',
     description: 'Slow-cooked black lentils in a buttery sauce.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+    image: dalMakhaniImage
   },
   {
-    name: 'Butter Chicken',
-    description: 'Tender chicken in a rich, creamy tomato sauce.',
-    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+    name: 'Allo Gobi',
+    description: 'Cauliflower and potatoes cooked with aromatic spices.',
+    image: alooGobiImage
   },
   {
-    name: 'Matar Paneer',
+    name: 'Veg Manchurian',
     description: 'Cottage cheese and peas cooked in a spicy gravy.',
-    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80'
+    image: vegManchurianImage
   }
 ];
 
@@ -39,8 +45,10 @@ function Home() {
     <main>
       <section className="hero">
         <div className="hero-content">
-          <h1><img src="/logo.png" alt="Handiram Logo" className="hero-logo" /> Welcome to Handiram</h1>
-          <p>Authentic North Indian Cuisine</p>
+          <img src="/logo.png" alt="Handiram Logo" 
+          className="hero-logo" />
+          <h1> Welcome to Handiram</h1>
+          <p>Authentic Indian Cuisine</p>
           <div className="hero-buttons">
             <Link to="/reservation" className="btn">Reserve a Table</Link>
             <Link to="/menu" className="btn btn-gold">View Menu</Link>

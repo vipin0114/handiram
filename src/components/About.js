@@ -13,8 +13,8 @@ We focus on quality ingredients, consistent taste, and cleanliness, ensuring eve
 
 At Handiram Restaurant, taste is our promise and safety is our priority. With warm hospitality and a convenient highway location, we look forward to becoming a place you stop by once — and return to every time you pass by.</p>
       <div className="owner-info">
-        <h3>Owner: Kapil Kumar Singh</h3>
-        <p>With years of experience in the culinary arts, Kapil Kumar Singh brings the essence of North Indian cuisine to your table.</p>
+        <h3>Owner: Mr. Prateek Singh & Ms. Mamta</h3>
+        <p>With years of experience in the culinary arts, Mr. Prateek Singh brings the essence of North Indian cuisine to your table.</p>
       </div>
     </section>
   );

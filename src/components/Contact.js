@@ -21,7 +21,7 @@ function Contact() {
         </div>
         <div className="map">
           <iframe
-            src="https://maps.google.com/maps?q=29.3861499,78.4528659&z=15&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.4545127093356!2d78.456097!3d29.386257199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390bc55a61b60139%3A0xc809f44e1a217fd7!2sHANDIRAM%20RESTAURENT!5e0!3m2!1sen!2suk!4v1768333263340!5m2!1sen!2suk"
             width="600"
             height="450"
             style={{ border: 0 }}
