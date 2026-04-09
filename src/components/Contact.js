@@ -30,7 +30,7 @@ function Contact() {
           <p>Dhampur–Nagina Road (NH-734)</p>
           <p>District Bijnor, Uttar Pradesh, India</p>
           <h3>Contact Number</h3>
-          <p>📞 Phone: +91 9871872037, +91 8285604443</p>
+          <p>📞 Phone: +91 9536319870, +91 9997736180</p>
           <p>(Available during restaurant working hours)</p>
           
           <div className="contact-buttons">
@@ -40,7 +40,7 @@ function Contact() {
             <button onClick={handleViewOnMaps} className="maps-btn">
               📍 View on Google Maps
             </button>
-            <button onClick={() => handleCall('+919871872037')} className="call-btn">
+            <button onClick={() => handleCall('+919536319870')} className="call-btn">
               📞 Call Now
             </button>
           </div>
@@ -61,5 +61,5 @@ function Contact() {
     </section>
   );
 }
-
+  
 export default Contact;
