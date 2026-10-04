@@ -48,15 +48,21 @@ const menuItems = [
 
 function Menu() {
   return (
-    <section className="menu">
-      <h2>Our Menu</h2>
+    <section className="menu page-shell">
+      <header className="page-heading">
+        <p className="section-kicker">Cooked fresh, served with care</p>
+        <h1>From the Handibhog kitchen</h1>
+        <p>Find a familiar favorite or discover something new from our North Indian kitchen.</p>
+      </header>
       <div className="menu-grid">
-        {menuItems.map((item, index) => (
-          <div key={index} className="menu-item">
-            <img src={item.image} alt={item.name} />
-            <h3>{item.name}</h3>
-            <p>{item.description}</p>
-          </div>
+        {menuItems.map((item) => (
+          <article key={item.name} className="menu-item">
+            <img src={item.image} alt={item.name} loading="lazy" />
+            <div className="menu-item-copy">
+              <h2>{item.name}</h2>
+              <p>{item.description}</p>
+            </div>
+          </article>
         ))}
       </div>
     </section>

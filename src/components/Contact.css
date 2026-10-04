@@ -1,134 +1,138 @@
+.contact-page {
+  background: var(--white);
+}
+
 .contact {
-  text-align: center;
+  padding-top: 72px;
+  padding-bottom: 90px;
 }
 
-.contact h2 {
-  margin-bottom: 40px;
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
+  align-items: stretch;
+  gap: 48px;
 }
 
-.contact-info {
+.contact-copy {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: left;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.info {
-  flex: 1;
-  min-width: 300px;
-  text-align: left;
+.contact-block + .contact-block {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid var(--line);
 }
 
-.info h3 {
-  color: var(--maroon);
-  margin-top: 20px;
+.contact-label {
+  margin: 0 0 8px;
+  color: var(--tomato);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
 }
 
-.directions-btn {
-  background-color: var(--primary);
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  margin-top: 15px;
-  transition: background-color 0.3s ease;
+.contact-block h2 {
+  margin: 0 0 8px;
+  font-size: 1.65rem;
 }
 
-.directions-btn:hover {
-  background-color: var(--secondary);
+.contact-block > p:last-child {
+  margin: 0;
+  color: var(--muted);
+}
+
+.contact-phone {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: var(--forest);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .contact-buttons {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
-.contact-buttons button {
-  background-color: var(--primary);
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-buttons button:hover {
-  background-color: var(--secondary);
-}
-
-.maps-btn {
-  background-color: #4285f4 !important;
-}
-
-.maps-btn:hover {
-  background-color: #3367d6 !important;
-}
-
-.call-btn {
-  background-color: #34a853 !important;
-}
-
-.call-btn:hover {
-  background-color: #2d8f47 !important;
-}
-
-.map {
-  flex: 1;
-  min-width: 300px;
-}
-
-.map iframe {
+.contact-buttons .btn {
   width: 100%;
-  max-width: 600px;
-  height: 450px;
-  border-radius: 10px;
+  padding-inline: 14px;
+  font-size: 0.83rem;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .contact-info {
-    flex-direction: column;
-    align-items: center;
+.contact-buttons .btn:first-child {
+  grid-column: 1 / -1;
+}
+
+.contact-buttons .btn-outline {
+  border-color: var(--line);
+  background: transparent;
+  color: var(--forest);
+}
+
+.contact-buttons .btn-outline:hover {
+  border-color: var(--forest);
+  background: var(--forest);
+  color: var(--white);
+}
+
+.contact-buttons .btn span {
+  margin-left: 8px;
+  font-size: 1.1rem;
+}
+
+.contact-map {
+  min-height: 440px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: #e7ece6;
+}
+
+.contact-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 440px;
+  border: 0;
+}
+
+@media (max-width: 760px) {
+  .contact {
+    padding-top: 52px;
+    padding-bottom: 64px;
   }
 
-  .info {
-    min-width: auto;
-    text-align: center;
-    margin-bottom: 30px;
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
   }
 
-  .contact-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-buttons button {
-    width: 100%;
-    max-width: 280px;
-  }
-
-  .map iframe {
-    height: 300px;
+  .contact-map,
+  .contact-map iframe {
+    min-height: 340px;
   }
 }
 
 @media (max-width: 480px) {
-  .contact h2 {
-    font-size: 1.5rem;
+  .contact-buttons {
+    grid-template-columns: 1fr;
   }
 
-  .map iframe {
-    height: 250px;
+  .contact-buttons .btn:first-child {
+    grid-column: auto;
+  }
+
+  .contact-map,
+  .contact-map iframe {
+    min-height: 280px;
   }
 }

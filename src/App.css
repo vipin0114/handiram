@@ -1,116 +1,177 @@
-/* Global Styles dfgdfgdfg*/
+:root {
+  --forest: #173d33;
+  --forest-dark: #102d26;
+  --leaf: #668c66;
+  --saffron: #e5a83b;
+  --tomato: #bd4d37;
+  --ink: #1d2d27;
+  --muted: #66746e;
+  --paper: #f5f7f2;
+  --white: #fff;
+  --line: #dce4dc;
+  --shadow: 0 18px 45px rgba(18, 45, 38, 0.11);
+}
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
-  background: linear-gradient(to bottom, var(--neutral), #FFE4B5);
+  min-width: 320px;
   min-height: 100vh;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 .App {
-  min-height: 100vh;
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
 }
 
-/* Color Palette */
-:root {
-  --primary: #8B0000; /* Deep red */
-  --secondary: #FF8C00; /* Warm orange */
-  --accent: #FFD700; /* Gold */
-  --neutral: #FFF8DC; /* Cream */
-  --dark: #2F1B14; /* Dark brown */
+main {
+  flex: 1;
 }
 
-/* Button Styles */
-.btn {
-  background-color: var(--primary);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  font-family: 'Roboto', sans-serif;
+img {
+  display: block;
+  max-width: 100%;
 }
 
-.btn:hover {
-  background-color: var(--dark);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.btn-gold {
-  background-color: var(--accent);
-  color: var(--primary);
-}
-
-.btn-gold:hover {
-  background-color: var(--secondary);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-/* Section Styles */
-section {
-  padding: 50px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  color: var(--primary);
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  color: var(--forest-dark);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600;
 }
 
 p {
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  section {
-    padding: 30px 15px;
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.page-shell {
+  width: min(100% - 48px, 1180px);
+  margin-inline: auto;
+}
+
+.section-kicker {
+  margin: 0 0 14px;
+  color: var(--tomato);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.page-heading {
+  max-width: 720px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.page-heading h1,
+.page-heading h2 {
+  margin-bottom: 14px;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.08;
+}
+
+.page-heading p:last-child {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.btn {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 23px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: var(--saffron);
+  color: var(--forest-dark);
+  cursor: pointer;
+  font-size: 0.91rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background: #f0bd5e;
+}
+
+.btn-primary {
+  background: var(--tomato);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: #a83d2c;
+}
+
+.btn-light {
+  border-color: rgba(255, 255, 255, 0.65);
+  background: transparent;
+  color: var(--white);
+}
+
+.btn-light:hover {
+  background: var(--white);
+  color: var(--forest-dark);
+}
+
+:focus-visible {
+  outline: 3px solid var(--saffron);
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: min(100% - 36px, 1180px);
   }
 
-  h1 {
-    font-size: 2rem;
+  .page-heading {
+    margin-bottom: 34px;
   }
 
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  .btn {
-    padding: 8px 16px;
-    font-size: 14px;
+  .page-heading h1,
+  .page-heading h2 {
+    font-size: 2.5rem;
   }
 }
 
-@media (max-width: 480px) {
-  section {
-    padding: 20px 10px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
