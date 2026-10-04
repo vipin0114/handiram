@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6a98c6c.css",
-    "main.js": "/static/js/main.4b848100.js",
-    "static/media/Butter Paneer.png": "/static/media/Butter Paneer.c4773cd47a28ebaa3f95.png",
-    "static/media/Allo Gobhi.png": "/static/media/Allo Gobhi.0de3dfca7b607221b619.png",
-    "static/media/Chana Masala.png": "/static/media/Chana Masala.e2c6416600b673e020de.png",
-    "static/media/Veg Manchurian.jpg": "/static/media/Veg Manchurian.9e9dfc391f2742f1f75b.jpg",
-    "static/media/Paneer noodles.jpg": "/static/media/Paneer noodles.0ee84bb2e3e8b9dace2b.jpg",
-    "static/media/Malai Kofta.jpg": "/static/media/Malai Kofta.a029e2c7f0a6e5ff428c.jpg",
-    "static/media/Daal Makhani.jpg": "/static/media/Daal Makhani.bcdc37cb719716b4e3ab.jpg",
-    "static/media/Sahi PAneer.jpg": "/static/media/Sahi PAneer.2f91aa3a90885940ef0c.jpg",
-    "index.html": "/index.html",
-    "main.a6a98c6c.css.map": "/static/css/main.a6a98c6c.css.map",
-    "main.4b848100.js.map": "/static/js/main.4b848100.js.map"
+    "main.css": "/handiram/static/css/main.a6a98c6c.css",
+    "main.js": "/handiram/static/js/main.6f6c4cf9.js",
+    "static/media/Butter Paneer.png": "/handiram/static/media/Butter Paneer.c4773cd47a28ebaa3f95.png",
+    "static/media/Allo Gobhi.png": "/handiram/static/media/Allo Gobhi.0de3dfca7b607221b619.png",
+    "static/media/Chana Masala.png": "/handiram/static/media/Chana Masala.e2c6416600b673e020de.png",
+    "static/media/Veg Manchurian.jpg": "/handiram/static/media/Veg Manchurian.9e9dfc391f2742f1f75b.jpg",
+    "static/media/Paneer noodles.jpg": "/handiram/static/media/Paneer noodles.0ee84bb2e3e8b9dace2b.jpg",
+    "static/media/Malai Kofta.jpg": "/handiram/static/media/Malai Kofta.a029e2c7f0a6e5ff428c.jpg",
+    "static/media/Daal Makhani.jpg": "/handiram/static/media/Daal Makhani.bcdc37cb719716b4e3ab.jpg",
+    "static/media/Sahi PAneer.jpg": "/handiram/static/media/Sahi PAneer.2f91aa3a90885940ef0c.jpg",
+    "index.html": "/handiram/index.html",
+    "main.a6a98c6c.css.map": "/handiram/static/css/main.a6a98c6c.css.map",
+    "main.6f6c4cf9.js.map": "/handiram/static/js/main.6f6c4cf9.js.map"
   },
   "entrypoints": [
     "static/css/main.a6a98c6c.css",
-    "static/js/main.4b848100.js"
+    "static/js/main.6f6c4cf9.js"
   ]
 }
