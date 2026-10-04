@@ -7,7 +7,16 @@
   background-color: var(--forest-dark);
   background-size: cover;
   background-position: center;
-  color: var(--white);
+  width: 100%;
+  max-width: none;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
 }
 
 .hero::before {
@@ -69,24 +78,16 @@
   }
 }
 
-.welcome-band {
-  background: var(--forest);
-  color: var(--white);
-}
-
-.welcome-band-inner {
-  display: flex;
-  min-height: 88px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-}
-
-.welcome-band p {
+/* Featured Dishes Section */
+.featured-dishes {
+  padding: 60px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  width: 100%;
+  max-width: none;
+  border-radius: 0;
   margin: 0;
-  color: #f2c66b;
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.35rem;
+  box-shadow: none;
 }
 
 .welcome-band span {

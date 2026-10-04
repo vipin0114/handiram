@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/handiram/static/css/main.c48cfc63.css",
-    "main.js": "/handiram/static/js/main.cc5d5e99.js",
+    "main.css": "/handiram/static/css/main.318f4b7d.css",
+    "main.js": "/handiram/static/js/main.60d7f8af.js",
     "static/media/Butter Paneer.png": "/handiram/static/media/Butter Paneer.c4773cd47a28ebaa3f95.png",
     "static/media/Allo Gobhi.png": "/handiram/static/media/Allo Gobhi.0de3dfca7b607221b619.png",
     "static/media/Chana Masala.png": "/handiram/static/media/Chana Masala.e2c6416600b673e020de.png",
@@ -11,11 +11,11 @@
     "static/media/Daal Makhani.jpg": "/handiram/static/media/Daal Makhani.bcdc37cb719716b4e3ab.jpg",
     "static/media/Sahi PAneer.jpg": "/handiram/static/media/Sahi PAneer.2f91aa3a90885940ef0c.jpg",
     "index.html": "/handiram/index.html",
-    "main.c48cfc63.css.map": "/handiram/static/css/main.c48cfc63.css.map",
-    "main.cc5d5e99.js.map": "/handiram/static/js/main.cc5d5e99.js.map"
+    "main.318f4b7d.css.map": "/handiram/static/css/main.318f4b7d.css.map",
+    "main.60d7f8af.js.map": "/handiram/static/js/main.60d7f8af.js.map"
   },
   "entrypoints": [
-    "static/css/main.c48cfc63.css",
-    "static/js/main.cc5d5e99.js"
+    "static/css/main.318f4b7d.css",
+    "static/js/main.60d7f8af.js"
   ]
 }

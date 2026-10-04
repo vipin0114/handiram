@@ -30,30 +30,18 @@ function Header() {
 
   return (
     <header className="header">
-      <Link className="brand-mark" to="/" onClick={() => setIsMenuOpen(false)}>
-        <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="" />
-        <span>
-          <strong>Handibhog</strong>
-          <small>North Indian kitchen</small>
-        </span>
-      </Link>
-      <nav ref={navRef} className={isMenuOpen ? 'nav-open' : ''} aria-label="Main navigation">
-        <button
-          className={`hamburger${isMenuOpen ? ' is-open' : ''}`}
-          type="button"
-          onClick={toggleMenu}
-          aria-label={isMenuOpen ? 'Close navigation' : 'Open navigation'}
-          aria-expanded={isMenuOpen}
-          aria-controls="primary-navigation"
-        >
-          <span />
-        </button>
-        <ul id="primary-navigation">
-          <li><NavLink to="/" onClick={() => setIsMenuOpen(false)}>Home</NavLink></li>
-          <li><NavLink to="/about" onClick={() => setIsMenuOpen(false)}>Our story</NavLink></li>
-          <li><NavLink to="/menu" onClick={() => setIsMenuOpen(false)}>Menu</NavLink></li>
-          <li><NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>Find us</NavLink></li>
-          <li><NavLink className="nav-reserve" to="/reservation" onClick={() => setIsMenuOpen(false)}>Reserve a table</NavLink></li>
+      <div className="logo">
+        <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Handibhog" />
+       
+      </div>
+      <nav ref={navRef} className={isMenuOpen ? 'nav-open' : ''}>
+        <button className="hamburger" onClick={toggleMenu}></button>
+        <ul>
+          <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
+          <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>About Us</Link></li>
+          <li><Link to="/menu" onClick={() => setIsMenuOpen(false)}>Menu</Link></li>
+          <li><Link to="/reservation" onClick={() => setIsMenuOpen(false)}>Reserve Table</Link></li>
+          <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
         </ul>
       </nav>
     </header>

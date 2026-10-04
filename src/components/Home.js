@@ -44,11 +44,15 @@ const featuredDishes = [
 function Home() {
   return (
     <main>
-      <section className="hero" style={{ backgroundImage: `url(${heroImage})` }}>
-        <div className="hero-content page-shell">
-          <p className="hero-kicker">North Indian kitchen · Dhampur–Nagina Road</p>
-          <h1>Handibhog</h1>
-          <p className="hero-copy">Slow-simmered favorites, warm hospitality, and a good pause in the middle of your journey.</p>
+      <section className="hero">
+        <div className="hero-content">
+          <img
+            src={`${process.env.PUBLIC_URL}/logo.png`}
+            alt="Handibhog Logo"
+            className="hero-logo"
+          />
+          <h1> Welcome to HANDIBHOG</h1>
+          <p>Authentic Indian Cuisine</p>
           <div className="hero-buttons">
             <Link to="/reservation" className="btn btn-primary">Reserve a table</Link>
             <Link to="/menu" className="btn btn-light">Explore the menu</Link>
