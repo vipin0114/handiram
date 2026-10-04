@@ -31,7 +31,7 @@ function Header() {
   return (
     <header className="header">
       <Link className="brand-mark" to="/" onClick={() => setIsMenuOpen(false)}>
-        <img src="/logo.png" alt="" />
+        <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="" />
         <span>
           <strong>Handibhog</strong>
           <small>North Indian kitchen</small>
