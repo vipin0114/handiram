@@ -28,7 +28,7 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <img src="/logo.png" alt="Handiram" />
+        <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Handibhog" />
        
       </div>
       <nav ref={navRef} className={isMenuOpen ? 'nav-open' : ''}>

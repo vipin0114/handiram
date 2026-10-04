@@ -45,9 +45,12 @@ function Home() {
     <main>
       <section className="hero">
         <div className="hero-content">
-          <img src="/logo.png" alt="Handiram Logo" 
-          className="hero-logo" />
-          <h1> Welcome to Handiram</h1>
+          <img
+            src={`${process.env.PUBLIC_URL}/logo.png`}
+            alt="Handibhog Logo"
+            className="hero-logo"
+          />
+          <h1> Welcome to HANDIBHOG</h1>
           <p>Authentic Indian Cuisine</p>
           <div className="hero-buttons">
             <Link to="/reservation" className="btn">Reserve a Table</Link>
