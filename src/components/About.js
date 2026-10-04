@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.css';
-import malaiKoftaImage from '../Assets/Malai Kofta.jpg';
 
 function About() {
   return (

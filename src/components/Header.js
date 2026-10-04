@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Header.css';
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navRef = useRef(null);
 
-  const toggleMenu = () => setIsMenuOpen((isOpen) => !isOpen);
+  const toggleMenu = () => {
+    setIsMenuOpen(true);
+  };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -13,18 +15,13 @@ function Header() {
         setIsMenuOpen(false);
       }
     };
-    const handleEscape = (event) => {
-      if (event.key === 'Escape') setIsMenuOpen(false);
-    };
 
     if (isMenuOpen) {
-      document.addEventListener('pointerdown', handleClickOutside);
-      document.addEventListener('keydown', handleEscape);
+      document.addEventListener('mousedown', handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('pointerdown', handleClickOutside);
-      document.removeEventListener('keydown', handleEscape);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [isMenuOpen]);
 

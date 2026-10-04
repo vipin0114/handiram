@@ -7,7 +7,6 @@ import sahiPaneerImage from '../Assets/Sahi PAneer.jpg';
 import dalMakhaniImage from '../Assets/Daal Makhani.jpg';
 import vegManchurianImage from '../Assets/Veg Manchurian.jpg';
 import alooGobiImage from '../Assets/Allo Gobhi.png';
-import heroImage from '../Assets/Butter Paneer.png';
 const featuredDishes = [
   {
     name: 'Malai Kofta',
@@ -54,48 +53,28 @@ function Home() {
           <h1> Welcome to HANDIBHOG</h1>
           <p>Authentic Indian Cuisine</p>
           <div className="hero-buttons">
-            <Link to="/reservation" className="btn btn-primary">Reserve a table</Link>
-            <Link to="/menu" className="btn btn-light">Explore the menu</Link>
+            <Link to="/reservation" className="btn">Reserve a Table</Link>
+            <Link to="/menu" className="btn btn-gold">View Menu</Link>
           </div>
         </div>
       </section>
 
-      <section className="welcome-band">
-        <div className="page-shell welcome-band-inner">
-          <p>Made for the miles.</p>
-          <span>Fresh North Indian food, just off NH-734 in Bijnor.</span>
-        </div>
-      </section>
-
-      <section className="featured-dishes page-shell">
-        <div className="section-heading">
-          <p className="section-kicker">From our kitchen</p>
-          <h2>Comfort, served generously.</h2>
-          <p>Slow-cooked classics and familiar favorites, made fresh for the road ahead.</p>
-        </div>
+      <section className="featured-dishes">
+        <h2>Our Signature Dishes</h2>
+        <p>Experience the authentic flavors of North India</p>
         <div className="dishes-grid">
-          {featuredDishes.map((dish) => (
-            <article key={dish.name} className="dish-card">
-              <img src={dish.image} alt={dish.name} loading="lazy" />
+          {featuredDishes.map((dish, index) => (
+            <div key={index} className="dish-card">
+              <img src={dish.image} alt={dish.name} />
               <div className="dish-info">
                 <h3>{dish.name}</h3>
                 <p>{dish.description}</p>
               </div>
-            </article>
+            </div>
           ))}
         </div>
         <div className="view-more">
-          <Link to="/menu" className="btn btn-primary">View the full menu <span aria-hidden="true">→</span></Link>
-        </div>
-      </section>
-
-      <section className="visit-banner">
-        <div className="page-shell visit-banner-inner">
-          <div>
-            <p className="section-kicker">A welcome stop along the way</p>
-            <h2>Make room for a proper meal.</h2>
-          </div>
-          <Link to="/reservation" className="btn btn-light">Plan your visit</Link>
+          <Link to="/menu" className="btn">View Full Menu</Link>
         </div>
       </section>
     </main>

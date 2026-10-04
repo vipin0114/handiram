@@ -1,89 +1,70 @@
 .menu {
-  padding-top: 72px;
-  padding-bottom: 96px;
+  text-align: center;
+}
+
+.menu h2 {
+  margin-bottom: 40px;
 }
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .menu-item {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
   overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--white);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-item:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .menu-item img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 200px;
   object-fit: cover;
 }
 
-.menu-item-copy {
-  min-height: 145px;
-  padding: 19px 20px 22px;
-}
-
-.menu-item h2 {
-  margin: 0 0 8px;
-  font-size: 1.35rem;
+.menu-item h3 {
+  margin: 15px 0 10px;
+  color: var(--primary);
 }
 
 .menu-item p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.92rem;
+  padding: 0 15px 10px;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   .menu-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+
+  .menu-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .menu-item p {
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
-  .menu {
-    padding-top: 52px;
-    padding-bottom: 64px;
-  }
-
   .menu-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 10px;
   }
 
-  .menu-item {
-    display: grid;
-    grid-template-columns: 112px minmax(0, 1fr);
-    align-items: center;
-  }
-
-  .menu-item img {
-    height: 100%;
-    min-height: 128px;
-    aspect-ratio: auto;
-  }
-
-  .menu-item-copy {
-    min-height: auto;
-    padding: 15px;
-  }
-
-  .menu-item h2 {
-    font-size: 1.08rem;
-  }
-
-  .menu-item p {
-    font-size: 0.83rem;
+  .menu h2 {
+    margin-bottom: 20px;
   }
 }
